@@ -55,6 +55,6 @@ function convertToNum(val){
   if(val === 'JACK'){
     return 11;
   } else {
-    return val;
+    return Number(val);
   }
 }
