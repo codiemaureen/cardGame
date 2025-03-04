@@ -28,12 +28,16 @@ getDeck();
 async function drawTwo(event){
   event.preventDefault();
   let deck = await getDeck();
-  console.log(deck.cards);
+
+    //need to hide until cards are pulled
     document.querySelector('#player1').src = deck.cards[0].image;
     document.querySelector('#player2').src = deck.cards[1].image;
 
+    //Logging card data
+    //need to track cards left
+    //need to build war function
+    //add element announcing the winner
     console.log(deck.cards[0].value > deck.cards[1].value);
-    
 
     let player1card = convertToNum(deck.cards[0].value);
     let player2card = convertToNum(deck.cards[1].value);
